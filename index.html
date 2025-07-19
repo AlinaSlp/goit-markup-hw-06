@@ -27,15 +27,85 @@
                     <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
                 </ul>
             </nav>
+
             <address class="contacts">
                 <ul class="contacts-list">
                     <li class="contacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+           
+            <button type="button" class="burger-btn" data-menu-open>
+                <svg class="icon-burger-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close" data-menu-close>
+                    <svg class="icon-menu-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <nav class="mobile-menu-nav">
+                    <ul class="nav-list-mobile-menu">
+                        <li class="nav-item-mobile-menu"><a class="nav-link-mobile-menu" href="./index.html">Studio</a></li>
+                        <li class="nav-item-mobile-menu"><a class="nav-link-mobile-menu" href="">Portfolio</a></li>
+                        <li class="nav-item-mobile-menu"><a class="nav-link-mobile-menu" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <address class="contacts-mobile-menu">
+                    <ul class="contacts-list-mobile-menu">
+                        <li class="contacts-item-mobile-menu"><a class="contacts-link-mobile-menu" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        <li class="contacts-item-mobile-menu"><a class="contacts-link-mobile-menu"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                </address>
+                
+                <div class="social-link-mobile-menu">
+                    <ul class="link-mobile-menu">
+                        <li class="list-link-mobile-menu">
+                            <a class="link-icon mobile-menu-icon" href="#">
+                                <svg class="icon-mobile-menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                
+                        <li class="list-link-mobile-menu">
+                            <a class="link-icon mobile-menu-icon" href="#">
+                                <svg class="icon-mobile-menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                
+                        <li class="list-link-mobile-menu">
+                            <a class="link-icon mobile-menu-icon" href="#">
+                                <svg class="icon-mobile-menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                
+                        <li class="list-link-mobile-menu">
+                            <a class="link-icon mobile-menu-icon" href="">
+                                <svg class="icon-mobile-menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-    <main>
+    
+    <main class="hidden">
         <section class="main-page-banner" id="hero-banner">
            <div class="container main-page-container">
             <h1 class="title">Effective Solutions for Your Business</h1>
@@ -342,7 +412,7 @@
             </div>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
         <div class="container page-footer-container">
             <div class="container-logo">
                 <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
@@ -403,7 +473,7 @@
         </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
         <div class="modal">
             <button class="button-modal-close" type="button" data-modal-close>
                 <svg class="icon-modal-close" width="8" height="8">
@@ -453,7 +523,7 @@
                         <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="form-input-privacy visually-hidden">
                         <label for="user-privacy" class="form-label">
                             <span class="span-privacy">
-                                <svg class="icon-modal" width="10" height="8">
+                                <svg class="icon-modal-privacy" width="10" height="8">
                                     <use href="./images/icons.svg#icon-Vector"></use>
                                 </svg>
                             </span>
@@ -467,5 +537,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
