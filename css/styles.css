@@ -678,7 +678,9 @@ button {
 .container-img-portfolio {
     position: relative;
     overflow: hidden;
-    border: 1px solid #e7e9fc;
+    border-top: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
 }
 
 @media screen and (min-width: 768px) {
