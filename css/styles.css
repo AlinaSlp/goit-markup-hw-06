@@ -1109,6 +1109,7 @@ input:checked + label .text-privacy-policy {
 }
 
 .link-privacy {
+    text-decoration: underline;
     color: #4d5ae5;
 }
 
